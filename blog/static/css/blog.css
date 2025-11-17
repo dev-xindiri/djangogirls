@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #dd640e;
+  --color: #828282;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+} 
+
+.header {
+  background-color: var(--bg-color);
+  color: #fff;
+  padding: 40px;
+  height: 120px;
+}
+
+.App {
+  padding: 20px;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr;
+}
+
+.post {
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 90%;
+  background-color: #dd640e78;
+  padding: 25px;
+  border-radius: 10px;
+  transition: .6s;
+}
+
+.post:hover {
+  opacity: .7;
+  transform: scale(110%);
+}
+
+.post .date {
+  color: var(--color);
+  float: right;
+}
+
+.post .title {
+  font-weight: 700;
+}
+
+.post .title::after {
+  content: "";
+  margin:  10px 0;
+  background-color: var(--color);
+  opacity: .5;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 1px;
+}
+
+/* Info */
+
+.info {
+  padding: 20px;
+}
+
+.desc {
+  float: right;
+  color: var(--color);
+  font-size: 12px;
+  display: block;
+  margin: 10px 0;
+}
+
+.infoText {
+  padding-top: 30px;
+  font-size: 16px;
+}
+
+.back {
+  display: block;
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+  font-size: 16px;
+  margin: 50px;
+  border-radius: 5px;
+  background-color: var(--color);
+}
+
+.back:focus {
+  outline: 1px solid var(--color);
+  outline-offset: 2px;
+}

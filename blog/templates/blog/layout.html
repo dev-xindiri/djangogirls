@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Django Girls Blog</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  <style type="text/css">
+    * {
+      border-right-width:   w;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="{% url 'post_new' %}">New Post</a>
+    <h1><a href="/">Django Girls Blog</a></h1>
+  </div>
+  {% block body %}
+  {% endblock %}
+</body>
+</html>
